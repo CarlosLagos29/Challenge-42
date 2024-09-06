@@ -18,4 +18,5 @@ const NonConstructible = (arr) => {
     return notSum;
 };
 
+
 export default NonConstructible
