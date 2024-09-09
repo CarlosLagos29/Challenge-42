@@ -1,8 +1,8 @@
-import React, { useState } from "react";
-import nonConstructible from "../../Functions/NonContructible/NonContructible";
+import React, { useState } from 'react';
+import nonConstructible from '../../Functions/NonContructible/NonContructible';
 
 const NonConstructible = () => {
-  const [result, setResult] = useState("Tu resultado");
+  const [result, setResult] = useState('Tu resultado');
   const [coins, setCoins] = useState([]);
   const [currentcoin, setCurrentCoin] = useState(0);
 
@@ -49,12 +49,21 @@ const NonConstructible = () => {
           value={currentcoin}
           onChange={(event) => setCurrentCoin(event.target.value)}
         />
-        <button className="px-3 border rounded-xl text-white bg-blue-500 disabled:bg-slate-500" onClick={handleCoins} disabled={currentcoin < 1}>
+        <button
+          className="px-3 border rounded-xl text-white bg-blue-500 disabled:bg-slate-500"
+          onClick={handleCoins}
+          disabled={currentcoin < 1}
+        >
           Seleccionar moneda
         </button>
       </section>
 
-      <button className="px-5 py-2 border rounded-xl text-white bg-blue-500 disabled:bg-slate-500" onClick={handleResult}>Poner a prueba!</button>
+      <button
+        className="px-5 py-2 border rounded-xl text-white bg-blue-500 disabled:bg-slate-500"
+        onClick={handleResult}
+      >
+        Poner a prueba!
+      </button>
     </div>
   );
 };

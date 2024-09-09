@@ -1,8 +1,8 @@
-import React, { useState } from "react";
-import twoNumSum from "../../Functions/TwoNumSum/TwoNumsSum";
+import React, { useState } from 'react';
+import twoNumSum from '../../Functions/TwoNumSum/TwoNumsSum';
 
 const TwoNumsum = () => {
-  const [result, setResult] = useState("Tu resultado");
+  const [result, setResult] = useState('Tu resultado');
   const [numbers, setNumbers] = useState([]);
   const [currentNumber, setCurrentNumber] = useState(0);
 
@@ -11,11 +11,11 @@ const TwoNumsum = () => {
 
   const handleResult = () => {
     const res = twoNumSum(numbers, targetsum);
-    if(res.length){
-    setResult(res);
-  } else {
-    setResult(`No existen dos numeros que al sumarlos de ${targetsum}`)
-  }
+    if (res.length) {
+      setResult(res);
+    } else {
+      setResult(`No existen dos numeros que al sumarlos de ${targetsum}`);
+    }
   };
 
   const handleNumbers = () => {
@@ -39,40 +39,45 @@ const TwoNumsum = () => {
 
       <section className="flex flex-col justify-center items-center gap-3">
         <span className=" space-x-3">
-        <label>Tu número objetivo:</label>
-        <input
-          className=" text-slate-900 px-2 rounded-xl"
-          type="number"
-          min={1}
-          value={currentSum || ""}
-          onChange={(event) => {
-            setCurrentsum(event.target.value);
-          }}
-        />
-        <button className="px-3 border rounded-xl text-white bg-blue-500 disabled:bg-slate-500"
-         onClick={() => setTargetsum(currentSum)} disabled={currentSum < 1}>
+          <label>Tu número objetivo:</label>
+          <input
+            className=" text-slate-900 px-2 rounded-xl"
+            type="number"
+            min={1}
+            value={currentSum || ''}
+            onChange={(event) => {
+              setCurrentsum(event.target.value);
+            }}
+          />
+          <button
+            className="px-3 border rounded-xl text-white bg-blue-500 disabled:bg-slate-500"
+            onClick={() => setTargetsum(currentSum)}
+            disabled={currentSum < 1}
+          >
             Seleccionar número
-        </button>
+          </button>
         </span>
 
-        <span>
-          Suma actual: {targetsum}
-        </span>
+        <span>Suma actual: {targetsum}</span>
       </section>
 
       <section className="flex flex-col justify-center items-center gap-3">
-       <span className="space-x-3">
+        <span className="space-x-3">
           <label>Ingresa tus números:</label>
           <input
             className=" text-slate-900 px-2 rounded-xl"
             type="number"
             min={1}
-            value={currentNumber || ""}
+            value={currentNumber || ''}
             onChange={(event) => {
               setCurrentNumber(event.target.value);
             }}
           />
-          <button className="px-3 border rounded-xl text-white bg-blue-500 disabled:bg-slate-500" onClick={handleNumbers} disabled={currentNumber < 1}>
+          <button
+            className="px-3 border rounded-xl text-white bg-blue-500 disabled:bg-slate-500"
+            onClick={handleNumbers}
+            disabled={currentNumber < 1}
+          >
             Seleccionar número
           </button>
         </span>
@@ -93,7 +98,13 @@ const TwoNumsum = () => {
           </ul>
         </span>
       </section>
-      <button className="px-5 py-2 border rounded-xl text-white bg-blue-500 disabled:bg-slate-500" onClick={handleResult} disabled={targetsum < 1}>Poner a prueba!</button>
+      <button
+        className="px-5 py-2 border rounded-xl text-white bg-blue-500 disabled:bg-slate-500"
+        onClick={handleResult}
+        disabled={targetsum < 1}
+      >
+        Poner a prueba!
+      </button>
     </div>
   );
 };
