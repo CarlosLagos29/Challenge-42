@@ -2,7 +2,7 @@
 
 ## Introduccón.
 
-En este test puse mucha dedicacion y a prueba tanto mi logica como mis habilidades tecnicas, a continuacion detallare los comandos a realizar oara inicializar el proyecto y comandos para diferetes funcionalidades.  
+En este test puse mucha dedicacion y a prueba tanto mi logica como mis habilidades tecnicas, a continuacion detallare los comandos a realizar oara inicializar el proyecto y comandos para diferetes funcionalidades.
 
 ## Inicializacion.
 
@@ -18,26 +18,26 @@ En este test puse mucha dedicacion y a prueba tanto mi logica como mis habilidad
    ```bash
    cd Challenge-42
    ```
-   
+
 ## Funcionalidades:
 
 ### Test unitarios:
 
 Este proyecto cuenta con test unitarios los cuales fueron echos con `Jest`.
 
-*Para el primer ejercicio el cual es `Non-Constructible Change` ejecuta el siguiente comando:*
+_Para el primer ejercicio el cual es `Non-Constructible Change` ejecuta el siguiente comando:_
 
 ```bash
 npm run test01
 ```
 
-*Para el segundo test `Two Number Sum` ejecuta:*
+_Para el segundo test `Two Number Sum` ejecuta:_
 
 ```bash
 npm run test02
 ```
 
-*O si prefieres ejecutar ambos al mismo tiempo:*
+_O si prefieres ejecutar ambos al mismo tiempo:_
 
 ```bash
 npm run test
@@ -50,6 +50,7 @@ Este proyecto tambien cuenta con una experiencia web realizada con `React` y `Ta
 ```bash
 npm run dev
 ```
+
 **Y dirigiendote al puerto [http://localhost:5173/](http://localhost:5173/) o al puerto que indique la consola.**
 <br/>
 **O si prefieres puedes visitar el proyecto deployado en [http://localhost:5173/](http://localhost:5173/)**
@@ -57,4 +58,3 @@ npm run dev
 ## Formato y Correcciones:
 
 Tambien se cuenta con las tecnologias `EsLint` y `Prettier` para darle formato y correcciones al codigo
-
