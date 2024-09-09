@@ -57,4 +57,13 @@ npm run dev
 
 ## Formato y Correcciones:
 
-Tambien se cuenta con las tecnologias `EsLint` y `Prettier` para darle formato y correcciones al codigo
+Tambien se cuenta con las tecnologias `EsLint` y `Prettier` para darle formato y correcciones al codigo:
+
+**Comando para Prettier:**
+```bash
+npm run format
+```
+**Comando para EsLint:**
+```bash
+npm run lint
+```
