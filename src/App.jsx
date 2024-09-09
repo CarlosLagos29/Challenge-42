@@ -8,8 +8,8 @@ const App = () => {
   const [view, setView] = useState(true);
 
   return (
-    <main className=" w-[95%] m-auto h-[100vh] py-5 pt-10 flex flex-col items-center space-y-3 ">
-      <nav className="w-full flex justify-center gap-10">
+    <main className=" w-[95%] m-auto lg:h-[100vh] py-5 pt-10 flex flex-col items-center space-y-3 ">
+      <nav className="w-full flex flex-wrap justify-center gap-2 lg:gap-10">
         <button
           className={` px-5 py-2 border rounded-xl ${view ? 'bg-blue-500' : 'bg-slate-500'} text-white`}
           onClick={() => setView(true)}
@@ -24,7 +24,7 @@ const App = () => {
         </button>
       </nav>
 
-      <div className=" m-auto w-[50%] h-[50vh] flex justify-center">
+      <div className=" m-auto w-[50%] flex items-center justify-center">
         {view ? <NonConstructible /> : <TwoNumsum />}
       </div>
     </main>

@@ -27,18 +27,18 @@ const TwoNumsum = () => {
   };
 
   return (
-    <div className="flex flex-col justify-center items-center gap-6">
-      <h1 className=" text-center text-balance text-2xl">
+    <div className="flex flex-col justify-center items-center gap-4 pt-5 lg:gap-6">
+      <h1 className=" text-center text-balance text-lg lg:text-2xl">
         Aquí podrás ver de una serie de números, si al pasarle otro número se
         puede lograr una suma de dos números para obtener ese resultado y qué
         números lo componen.
       </h1>
-      <h2 className=" text-2xl underline text-green-400 px-4 decoration">
+      <h2 className=" text-lg lg:text-2xl underline text-green-400 px-4 decoration">
         {Array.isArray(result) ? `${result[0]} y ${result[1]}` : result}
       </h2>
 
       <section className="flex flex-col justify-center items-center gap-3">
-        <span className=" space-x-3">
+        <span className=" flex flex-wrap justify-center items-center gap-3">
           <label>Tu número objetivo:</label>
           <input
             className=" text-slate-900 px-2 rounded-xl"
@@ -62,7 +62,7 @@ const TwoNumsum = () => {
       </section>
 
       <section className="flex flex-col justify-center items-center gap-3">
-        <span className="space-x-3">
+        <span className="flex flex-wrap justify-center items-center gap-3">
           <label>Ingresa tus números:</label>
           <input
             className=" text-slate-900 px-2 rounded-xl"

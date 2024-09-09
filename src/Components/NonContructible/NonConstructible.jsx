@@ -19,12 +19,12 @@ const NonConstructible = () => {
   };
 
   return (
-    <div className="flex flex-col justify-center items-center gap-6">
-      <h1 className=" text-center text-balance text-2xl">
+    <div className="flex flex-col justify-center items-center gap-4 pt-5 lg:gap-6">
+      <h1 className=" text-center text-balance text-lg lg:text-2xl">
         Aquí podrás interactuar con tus monedas y ver cuál es el número mínimo
         que no puedes hacer sumándolas
       </h1>
-      <h2 className=" text-2xl underline text-green-400 px-4 decoration">
+      <h2 className="text-lg lg:text-2xl underline text-green-400 px-4 decoration">
         {result}
       </h2>
       <ul className="flex gap-2">
@@ -40,7 +40,7 @@ const NonConstructible = () => {
           </li>
         ))}
       </ul>
-      <section className="flex justify-center items-center gap-3">
+      <section className="flex flex-wrap justify-center items-center gap-3">
         <label>Ingresa tus monedas:</label>
         <input
           className=" text-slate-900 px-2 rounded-xl"
