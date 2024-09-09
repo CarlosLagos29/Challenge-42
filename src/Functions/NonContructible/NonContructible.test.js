@@ -1,6 +1,6 @@
 import NonConstructible from "./NonContructible";
 
-describe('NonConstructible', () => {
+describe('Non-Constructible Change', () => {
     it('Debe devolver un numero', () => {
         expect(typeof NonConstructible()).toBe('number');
     });

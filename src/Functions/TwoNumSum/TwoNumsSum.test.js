@@ -1,6 +1,6 @@
 import TwoNumSum from "./TwoNumsSum";
 
-describe('TwoNumSum', () => {
+describe('Two Number Sum', () => {
     it('Debe devolver un objeto', () => {
         expect(typeof TwoNumSum()).toBe('object');
     });
