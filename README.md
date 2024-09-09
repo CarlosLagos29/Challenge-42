@@ -10,13 +10,13 @@ En este test puse mucha dedicación y a prueba tanto mi lógica como mis habilid
 
    ```bash
    git clone https://github.com/CarlosLagos29/Challenge-42.git
-   cd swaplyar-frontend
+   cd Challenge-42
    ```
 
 2. **Instalación de Dependencias**
 
    ```bash
-   cd Challenge-42
+   npm install
    ```
 
 ## Funcionalidades:
