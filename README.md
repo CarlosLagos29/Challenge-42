@@ -2,9 +2,9 @@
 
 ## Introduccón.
 
-En este test puse mucha dedicacion y a prueba tanto mi logica como mis habilidades tecnicas, a continuacion detallare los comandos a realizar oara inicializar el proyecto y comandos para diferetes funcionalidades.
+En este test puse mucha dedicación y a prueba tanto mi lógica como mis habilidades técnicas. A continuación, detallaré los comandos a realizar para inicializar el proyecto y los comandos para diferentes funcionalidades.
 
-## Inicializacion.
+## Inicialización.
 
 1. **Clonar el Repositorio**
 
