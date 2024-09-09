@@ -53,7 +53,7 @@ npm run dev
 
 **Y dirigiendote al puerto [http://localhost:5173/](http://localhost:5173/) o al puerto que indique la consola.**
 <br/>
-**O si prefieres puedes visitar el proyecto deployado en [http://localhost:5173/](http://localhost:5173/)**
+**O si prefieres puedes visitar el proyecto deployado en [https://challengei42.netlify.app/](https://challengei42.netlify.app/)**
 
 ## Formato y Correcciones:
 
